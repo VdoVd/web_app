@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)^l9$fa9pcysx)o(_)vfg)k2$yy=$=s55(u^-^qwi^gszljwml
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.meiduo.site','127.0.0.1']
 
 
 # Application definition
@@ -189,3 +189,5 @@ LOGGING = {
         },
     }
 }
+
+AUTH_USER_MODEL = 'users.User'
