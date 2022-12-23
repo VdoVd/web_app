@@ -160,3 +160,38 @@ INFO 2022-12-23 17:49:40,980 autoreload 266 D:\project\python\美多商城\web_app\m
 INFO 2022-12-23 17:49:41,075 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
 INFO 2022-12-23 17:49:41,708 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-12-23 17:49:41,809 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 17:49:46,786 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 19:24:53,656 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 19:28:43,080 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-23 19:28:43,809 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 19:31:36,199 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-23 19:31:36,909 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 19:31:56,420 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-23 19:31:57,169 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 19:32:06,517 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-23 19:32:07,207 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 19:33:07,590 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-23 19:33:08,291 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 20:14:05,485 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 20:35:13,884 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 20:35:14,585 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 20:38:39,783 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 20:38:40,613 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 20:38:43,957 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 20:38:44,750 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 20:56:31,634 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 21:01:55,730 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 21:01:56,567 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 21:02:02,925 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 21:02:03,721 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 21:02:12,119 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 21:02:12,906 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 21:02:43,815 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 21:10:44,562 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-23 21:10:45,333 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 21:55:08,661 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-23 21:55:09,454 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 21:56:57,655 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-23 21:56:58,358 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 21:57:04,708 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-23 21:57:05,377 autoreload 677 Watching for file changes with StatReloader
