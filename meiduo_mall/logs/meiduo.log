@@ -195,3 +195,122 @@ INFO 2022-12-23 21:56:57,655 autoreload 266 D:\project\python\美多商城\web_app\m
 INFO 2022-12-23 21:56:58,358 autoreload 677 Watching for file changes with StatReloader
 INFO 2022-12-23 21:57:04,708 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
 INFO 2022-12-23 21:57:05,377 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 22:09:03,513 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 301 0
+INFO 2022-12-23 22:09:03,527 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+ERROR 2022-12-23 22:09:27,701 exception 124 Invalid HTTP_HOST header: 'meiduo.site:8000'. You may need to add 'meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\http\request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'meiduo.site:8000'. You may need to add 'meiduo.site' to ALLOWED_HOSTS.
+WARNING 2022-12-23 22:09:27,816 log 241 Bad Request: /usernames/alice/count
+WARNING 2022-12-23 22:09:27,817 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 400 83235
+INFO 2022-12-23 22:12:20,677 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 22:12:21,364 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 22:12:50,229 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 22:12:50,890 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 22:14:01,581 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 22:14:02,304 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 22:15:33,463 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-23 22:15:34,142 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-23 22:16:21,971 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 301 0
+INFO 2022-12-23 22:16:21,982 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+ERROR 2022-12-23 22:16:39,639 exception 124 Invalid HTTP_HOST header: 'meiduo.site:8000'. You may need to add 'meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\http\request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'meiduo.site:8000'. You may need to add 'meiduo.site' to ALLOWED_HOSTS.
+WARNING 2022-12-23 22:16:39,673 log 241 Bad Request: /usernames/alice/count
+WARNING 2022-12-23 22:16:39,674 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 400 83956
+INFO 2022-12-23 22:38:00,628 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-12-23 22:38:42,935 exception 124 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\http\request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2022-12-23 22:38:42,976 log 241 Bad Request: /register.html
+WARNING 2022-12-23 22:38:42,977 basehttp 187 "GET /register.html HTTP/1.1" 400 92506
+ERROR 2022-12-23 23:17:47,868 exception 124 Invalid HTTP_HOST header: 'meiduo.site:8000'. You may need to add 'meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\http\request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'meiduo.site:8000'. You may need to add 'meiduo.site' to ALLOWED_HOSTS.
+WARNING 2022-12-23 23:17:47,890 log 241 Bad Request: /usernames/alice/count
+WARNING 2022-12-23 23:17:47,891 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 400 83956
+INFO 2022-12-23 23:18:19,587 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 301 0
+INFO 2022-12-23 23:18:19,599 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+ERROR 2022-12-23 23:18:37,218 exception 124 Invalid HTTP_HOST header: 'meiduo.site:8000'. You may need to add 'meiduo.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\http\request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'meiduo.site:8000'. You may need to add 'meiduo.site' to ALLOWED_HOSTS.
+WARNING 2022-12-23 23:18:37,241 log 241 Bad Request: /usernames/alice/count
+WARNING 2022-12-23 23:18:37,241 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 400 83956
+INFO 2022-12-23 23:19:48,140 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-24 22:46:33,121 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-24 22:47:52,697 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-25 12:41:57,073 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-25 13:08:15,867 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-25 13:08:16,701 autoreload 677 Watching for file changes with StatReloader
+ERROR 2022-12-25 13:26:26,154 exception 124 Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\http\request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+WARNING 2022-12-25 13:26:26,280 log 241 Bad Request: /usernames/alice/count
+WARNING 2022-12-25 13:26:26,281 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 400 84295
+INFO 2022-12-25 13:26:35,593 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 301 0
+INFO 2022-12-25 13:26:35,667 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-25 13:56:55,358 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-25 13:56:56,171 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-25 13:57:03,389 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 301 0
+INFO 2022-12-25 13:57:03,403 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-25 14:02:01,824 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 301 0
+INFO 2022-12-25 14:02:01,834 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-25 14:03:05,957 autoreload 677 Watching for file changes with StatReloader
+INFO 2022-12-25 14:03:38,154 autoreload 266 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-25 14:03:38,849 autoreload 677 Watching for file changes with StatReloader
+WARNING 2022-12-25 14:06:38,145 log 241 Not Found: /ostusernames/alice/count
+WARNING 2022-12-25 14:06:38,146 basehttp 187 "GET /ostusernames/alice/count HTTP/1.1" 404 2590
+INFO 2022-12-25 14:06:49,608 basehttp 187 "GET /usernames/alice/count HTTP/1.1" 301 0
+INFO 2022-12-25 14:06:49,620 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-25 14:07:04,870 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-25 14:09:09,246 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-25 14:09:11,814 basehttp 187 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+WARNING 2022-12-25 14:14:09,299 log 241 Not Found: /image_codes/800adea4-92e5-42f9-be7e-841a2c3ad916/
+WARNING 2022-12-25 14:14:09,300 basehttp 187 "GET /image_codes/800adea4-92e5-42f9-be7e-841a2c3ad916/ HTTP/1.1" 404 2671

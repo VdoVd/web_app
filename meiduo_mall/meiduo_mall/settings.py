@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-)^l9$fa9pcysx)o(_)vfg)k2$yy=$=s55(u^-^qwi^gszljwml
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.meiduo.site','127.0.0.1']
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -38,16 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.users',
+    #'crows browser setting',
     'corsheaders',
 ]
 
 MIDDLEWARE = [
-    
+    #cors
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -70,6 +69,8 @@ TEMPLATES = [
         },
     },
 ]
+
+WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 
 CACHES = {
     "default":{
@@ -105,6 +106,14 @@ DATABASES = {
         'PASSWORD':'root',
         'HOST':'127.0.0.1',
         'PORT':'3306',
+    },
+    'slave': {
+        'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
+        'HOST': '127.0.0.1',  # 数据库主机
+        'PORT': 8306,  # 数据库端口
+        'USER': 'root',  # 数据库用户名
+        'PASSWORD': 'root',  # 数据库用户密码
+        'NAME': 'meiduo_mall'  # 数据库名字
     }
 }
 
@@ -195,11 +204,35 @@ LOGGING = {
 
 AUTH_USER_MODEL = 'users.User'
 
-CORS_ORIGIN_WHITELIST = (
-    'http://127.0.0.1:8000',
-    'http://localhost:8080',
-    'http://www.meiduo.site:8080',
-    'http://www.meiduo.site:8000'
+# CORS  白名单
+# CORS_ORIGIN_WHITELIST = (
+#     'http://127.0.0.1:8080',
+#     'http://localhost:8080',
+#     'http://www.meiduo.site:8080',
+#     'http://www.meiduo.site:8000',
+# )
+CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
+
+CORS_ALLOW_METHODS = (
+ 'DELETE',
+ 'GET',
+ 'OPTIONS',
+ 'PATCH',
+ 'POST',
+ 'PUT',
+ 'VIEW',
 )
 
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = (
+ 'XMLHttpRequest',
+ 'X_FILENAME',
+ 'accept-encoding',
+ 'authorization',
+ 'content-type',
+ 'dnt',
+ 'origin',
+ 'user-agent',
+ 'x-csrftoken',
+ 'x-requested-with',
+ 'Pragma',
+)
