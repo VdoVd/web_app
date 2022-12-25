@@ -204,13 +204,14 @@ LOGGING = {
 
 AUTH_USER_MODEL = 'users.User'
 
-# CORS  白名单
-# CORS_ORIGIN_WHITELIST = (
-#     'http://127.0.0.1:8080',
-#     'http://localhost:8080',
-#     'http://www.meiduo.site:8080',
-#     'http://www.meiduo.site:8000',
-# )
+#CORS  白名单
+CORS_ORIGIN_WHITELIST = (
+    'http://127.0.0.1:8080',
+    'http://localhost:8080',
+    'http://www.meiduo.site:8080',
+    'http://www.meiduo.site:8000',
+)
+
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 
 CORS_ALLOW_METHODS = (
