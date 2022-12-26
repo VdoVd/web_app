@@ -36,17 +36,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.users',
     #'crows browser setting',
     'corsheaders',
+    'apps.verifications',
+    'apps.users',
+    
 ]
 
 MIDDLEWARE = [
     #cors
-    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -83,6 +85,13 @@ CACHES = {
     "session":{
         "BACKEND":"django_redis.cache.RedisCache",
         "LOCATION":"redis://127.0.0.1:6379/1",
+        "OPTIONS":{
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "code":{
+        "BACKEND":"django_redis.cache.RedisCache",
+        "LOCATION":"redis://127.0.0.1:6379/2",
         "OPTIONS":{
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -205,35 +214,33 @@ LOGGING = {
 AUTH_USER_MODEL = 'users.User'
 
 #CORS  白名单
-CORS_ORIGIN_WHITELIST = (
+CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8080',
     'http://localhost:8080',
     'http://www.meiduo.site:8080',
     'http://www.meiduo.site:8000',
-)
+    'http://meiduo.site:8000',
+    'htpp://meiduo.site:8080',
+]
 
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 
-CORS_ALLOW_METHODS = (
- 'DELETE',
- 'GET',
- 'OPTIONS',
- 'PATCH',
- 'POST',
- 'PUT',
- 'VIEW',
-)
-
-CORS_ALLOW_HEADERS = (
- 'XMLHttpRequest',
- 'X_FILENAME',
- 'accept-encoding',
- 'authorization',
- 'content-type',
- 'dnt',
- 'origin',
- 'user-agent',
- 'x-csrftoken',
- 'x-requested-with',
- 'Pragma',
-)
+# CORS_ALLOW_METHODS = [
+#     "DELETE",
+#     "GET",
+#     "OPTIONS",
+#     "PATCH",
+#     "POST",
+#     "PUT",
+# ]
+# CORS_ALLOW_HEADERS = [
+#     "accept",
+#     "accept-encoding",
+#     "authorization",
+#     "content-type",
+#     "dnt",
+#     "origin",
+#     "user-agent",
+#     "x-csrftoken",
+#     "x-requested-with",
+# ]
