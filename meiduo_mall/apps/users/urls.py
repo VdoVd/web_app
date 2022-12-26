@@ -1,6 +1,6 @@
 from django.urls import path
-from apps.users.views import UsernameCountView,Test
+from apps.users.views import UsernameCountView,RegisterView
 urlpatterns = [
     path('usernames/<username>/count/',UsernameCountView.as_view()),
-    path('users',Test.as_view())
+    path('register/',RegisterView.as_view()),
 ]
