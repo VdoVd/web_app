@@ -885,3 +885,11 @@ AttributeError: 'Redis' object has no attribute 'selex'
 ERROR 2022-12-26 19:33:58,659 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 500 95704
 INFO 2022-12-26 19:35:03,427 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py changed, reloading.
 INFO 2022-12-26 19:35:04,253 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-26 19:35:15,514 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 2875
+INFO 2022-12-26 19:35:22,195 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3418
+INFO 2022-12-26 19:35:23,390 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3545
+INFO 2022-12-26 19:35:24,225 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3108
+INFO 2022-12-26 19:35:25,047 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 2943
+WARNING 2022-12-26 19:35:51,118 log 224 Not Found: /register.html
+WARNING 2022-12-26 19:35:51,119 basehttp 161 "GET /register.html HTTP/1.1" 404 2739
+INFO 2022-12-26 19:36:00,401 basehttp 161 "GET /image_codes/16a9dc7c-aa03-4c3f-808a-774559abdec0/ HTTP/1.1" 200 3177
