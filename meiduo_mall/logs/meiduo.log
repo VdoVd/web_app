@@ -893,3 +893,152 @@ INFO 2022-12-26 19:35:25,047 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 2
 WARNING 2022-12-26 19:35:51,118 log 224 Not Found: /register.html
 WARNING 2022-12-26 19:35:51,119 basehttp 161 "GET /register.html HTTP/1.1" 404 2739
 INFO 2022-12-26 19:36:00,401 basehttp 161 "GET /image_codes/16a9dc7c-aa03-4c3f-808a-774559abdec0/ HTTP/1.1" 200 3177
+INFO 2022-12-26 19:55:22,999 basehttp 161 "GET /image_codes/3fad17e0-4832-4a0c-9b1a-f2bc7d7f9f44/ HTTP/1.1" 200 3212
+INFO 2022-12-26 19:55:23,878 basehttp 161 "GET /image_codes/06f771c1-177a-4cfb-87c3-0e85f8761a6d/ HTTP/1.1" 200 2780
+INFO 2022-12-26 19:55:24,659 basehttp 161 "GET /image_codes/f8aaf971-072e-4a8d-a736-35f292557160/ HTTP/1.1" 200 3225
+INFO 2022-12-26 19:55:25,378 basehttp 161 "GET /image_codes/d8c9f1fd-6f91-4817-b151-2d789bd60d60/ HTTP/1.1" 200 3080
+INFO 2022-12-26 19:55:26,113 basehttp 161 "GET /image_codes/61a10d69-58ff-45cf-a9ac-0be3cc4fa87c/ HTTP/1.1" 200 3334
+INFO 2022-12-26 19:55:26,860 basehttp 161 "GET /image_codes/8db6f23b-de52-4479-96c4-2a782de3e906/ HTTP/1.1" 200 3298
+INFO 2022-12-26 19:55:27,753 basehttp 161 "GET /image_codes/0679e2c8-f455-4414-9e53-2614847b6a0f/ HTTP/1.1" 200 3421
+INFO 2022-12-26 21:21:28,908 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:28,918 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3139
+INFO 2022-12-26 21:21:35,897 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:35,905 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3253
+INFO 2022-12-26 21:21:37,477 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:37,484 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3385
+INFO 2022-12-26 21:21:39,042 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:39,048 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3255
+INFO 2022-12-26 21:21:40,386 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:40,392 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3018
+INFO 2022-12-26 21:21:41,679 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:41,688 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3352
+INFO 2022-12-26 21:21:43,037 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:43,045 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3162
+INFO 2022-12-26 21:21:44,324 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:44,330 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 2990
+INFO 2022-12-26 21:21:46,203 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:46,211 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3103
+INFO 2022-12-26 21:21:47,427 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:47,434 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3293
+INFO 2022-12-26 21:21:48,515 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:48,522 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3655
+INFO 2022-12-26 21:21:49,524 basehttp 161 "GET /image_codes/999 HTTP/1.1" 301 0
+INFO 2022-12-26 21:21:49,532 basehttp 161 "GET /image_codes/999/ HTTP/1.1" 200 3218
+INFO 2022-12-26 21:40:03,685 basehttp 161 "GET /usernames/sssss/count/ HTTP/1.1" 200 39
+WARNING 2022-12-26 21:40:32,554 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 21:40:32,554 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2778
+WARNING 2022-12-26 21:40:33,544 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 21:40:33,544 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2778
+WARNING 2022-12-26 21:40:45,115 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 21:40:45,116 log 224 Not Found: /sms_codes/15360606636/
+WARNING 2022-12-26 21:40:45,117 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2778
+WARNING 2022-12-26 21:40:45,117 basehttp 161 "GET /sms_codes/15360606636/?image_code=NH3A&image_code_id=0679e2c8-f455-4414-9e53-2614847b6a0f HTTP/1.1" 404 2837
+INFO 2022-12-26 21:40:55,416 basehttp 161 "GET /image_codes/d818d165-48c9-4985-ae3d-fc01d49b559a/ HTTP/1.1" 200 3211
+INFO 2022-12-26 21:41:15,704 basehttp 161 "GET /usernames/jjjjjj/count/ HTTP/1.1" 200 39
+WARNING 2022-12-26 21:42:01,232 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 21:42:01,232 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2778
+WARNING 2022-12-26 21:42:01,454 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 21:42:01,455 log 224 Not Found: /sms_codes/15360606636/
+WARNING 2022-12-26 21:42:01,455 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2778
+WARNING 2022-12-26 21:42:01,455 basehttp 161 "GET /sms_codes/15360606636/?image_code=QDMT&image_code_id=d818d165-48c9-4985-ae3d-fc01d49b559a HTTP/1.1" 404 2837
+WARNING 2022-12-26 22:10:08,004 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 22:10:08,005 log 224 Not Found: /sms_codes/15360606636/
+WARNING 2022-12-26 22:10:08,005 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2778
+WARNING 2022-12-26 22:10:08,006 basehttp 161 "GET /sms_codes/15360606636/?image_code=QDMT&image_code_id=d818d165-48c9-4985-ae3d-fc01d49b559a HTTP/1.1" 404 2837
+WARNING 2022-12-26 22:10:12,199 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 22:10:12,200 log 224 Not Found: /sms_codes/15360606636/
+WARNING 2022-12-26 22:10:12,201 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2778
+WARNING 2022-12-26 22:10:12,201 basehttp 161 "GET /sms_codes/15360606636/?image_code=QDMT&image_code_id=d818d165-48c9-4985-ae3d-fc01d49b559a HTTP/1.1" 404 2837
+WARNING 2022-12-26 22:10:17,974 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 22:10:17,975 log 224 Not Found: /sms_codes/15360606636/
+WARNING 2022-12-26 22:10:17,975 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2778
+WARNING 2022-12-26 22:10:17,975 basehttp 161 "GET /sms_codes/15360606636/?image_code=QDMT&image_code_id=d818d165-48c9-4985-ae3d-fc01d49b559a HTTP/1.1" 404 2837
+INFO 2022-12-26 22:32:27,272 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py changed, reloading.
+INFO 2022-12-26 22:32:27,999 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-26 22:33:00,217 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py changed, reloading.
+INFO 2022-12-26 22:33:00,923 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-26 23:11:29,177 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\urls.py changed, reloading.
+INFO 2022-12-26 23:11:29,967 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-26 23:11:53,887 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\urls.py changed, reloading.
+INFO 2022-12-26 23:11:54,646 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-26 23:22:18,954 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py changed, reloading.
+INFO 2022-12-26 23:22:19,720 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-26 23:23:01,149 basehttp 161 "GET /image_codes/ae7fd07c-8106-45d1-8167-d5398d67bdff/ HTTP/1.1" 200 3280
+INFO 2022-12-26 23:23:07,295 basehttp 161 "GET /usernames/jjjjj/count/ HTTP/1.1" 200 39
+WARNING 2022-12-26 23:23:36,801 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 23:23:36,802 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2950
+WARNING 2022-12-26 23:23:50,824 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 23:23:50,824 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2950
+ERROR 2022-12-26 23:23:50,863 log 224 Internal Server Error: /sms_codes/15360606636/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py", line 25, in get
+    image_code = request.Get.get('image_code')
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+ERROR 2022-12-26 23:23:50,866 basehttp 161 "GET /sms_codes/15360606636/?image_code=qujx&image_code_id=ae7fd07c-8106-45d1-8167-d5398d67bdff HTTP/1.1" 500 91546
+INFO 2022-12-26 23:24:01,912 basehttp 161 "GET /image_codes/7f750dcd-ee21-4076-a970-b6726f3b044f/ HTTP/1.1" 200 3165
+WARNING 2022-12-26 23:24:13,111 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 23:24:13,112 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2950
+ERROR 2022-12-26 23:24:13,127 log 224 Internal Server Error: /sms_codes/15360606636/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py", line 25, in get
+    image_code = request.Get.get('image_code')
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+ERROR 2022-12-26 23:24:13,129 basehttp 161 "GET /sms_codes/15360606636/?image_code=tvnv&image_code_id=7f750dcd-ee21-4076-a970-b6726f3b044f HTTP/1.1" 500 91546
+WARNING 2022-12-26 23:24:25,041 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-26 23:24:25,041 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2950
+INFO 2022-12-26 23:31:12,725 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py changed, reloading.
+INFO 2022-12-26 23:31:13,484 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-26 23:31:25,093 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py changed, reloading.
+INFO 2022-12-26 23:31:25,843 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-26 23:36:06,650 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-27 19:30:06,512 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-27 19:31:41,469 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-27 19:52:51,994 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2022-12-27 19:52:52,781 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-27 20:02:32,672 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py changed, reloading.
+INFO 2022-12-27 20:02:33,507 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-27 20:48:52,588 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-27 20:56:14,870 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-27 20:56:32,459 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py changed, reloading.
+INFO 2022-12-27 20:56:33,167 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-27 21:33:15,949 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-27 21:41:14,842 basehttp 161 "GET /image_codes/23308f49-5d20-4b5a-97e2-c13f759ae92e/ HTTP/1.1" 200 3104
+INFO 2022-12-27 21:41:24,573 basehttp 161 "GET /usernames/oincer/count/ HTTP/1.1" 200 39
+WARNING 2022-12-27 21:41:43,148 log 224 Not Found: /mobiles/15300000009/count/
+WARNING 2022-12-27 21:41:43,149 basehttp 161 "GET /mobiles/15300000009/count/ HTTP/1.1" 404 2950
+INFO 2022-12-27 21:42:04,501 basehttp 161 "GET /usernames/oincer/count/ HTTP/1.1" 200 39
+WARNING 2022-12-27 21:42:04,501 log 224 Not Found: /mobiles/15300000009/count/
+WARNING 2022-12-27 21:42:04,502 basehttp 161 "GET /mobiles/15300000009/count/ HTTP/1.1" 404 2950
+WARNING 2022-12-27 21:42:08,042 log 224 Not Found: /mobiles/15300000009/count/
+WARNING 2022-12-27 21:42:08,042 basehttp 161 "GET /mobiles/15300000009/count/ HTTP/1.1" 404 2950
+ERROR 2022-12-27 21:42:08,080 log 224 Internal Server Error: /sms_codes/15300000009/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py", line 25, in get
+    image_code = request.Get.get('image_code')
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+ERROR 2022-12-27 21:42:08,082 basehttp 161 "GET /sms_codes/15300000009/?image_code=dchc&image_code_id=23308f49-5d20-4b5a-97e2-c13f759ae92e HTTP/1.1" 500 90651
+INFO 2022-12-27 21:48:50,398 autoreload 637 Watching for file changes with StatReloader

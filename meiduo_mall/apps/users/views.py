@@ -40,7 +40,14 @@ class RegisterView(View):
         # user = User(username = username,password = password,mobile = mobile)
         # user.save()
 
+        #create user and encryption password
         User.objects.create_user(username=username,password=password,mobile=mobile)
 
+        #set session
+        from django.contrib.auth import login
+        
+        login(request.user)
+        
+        
         return JsonResponse({'code':0,'errmsg':'ok'})
         
