@@ -1042,3 +1042,52 @@ Traceback (most recent call last):
 AttributeError: 'WSGIRequest' object has no attribute 'Get'
 ERROR 2022-12-27 21:42:08,082 basehttp 161 "GET /sms_codes/15300000009/?image_code=dchc&image_code_id=23308f49-5d20-4b5a-97e2-c13f759ae92e HTTP/1.1" 500 90651
 INFO 2022-12-27 21:48:50,398 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-28 22:01:55,523 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-28 22:03:37,446 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-28 22:17:08,624 basehttp 161 "GET /image_codes/f76761d4-8c06-47b7-9dcf-be3e270e2842/ HTTP/1.1" 200 3275
+INFO 2022-12-28 22:36:10,440 basehttp 161 "GET /usernames/liuhaobin/count/ HTTP/1.1" 200 39
+WARNING 2022-12-28 22:36:26,732 log 224 Not Found: /mobiles/15360606636/count/
+WARNING 2022-12-28 22:36:26,733 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 404 2950
+INFO 2022-12-28 22:40:57,437 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-28 22:40:58,237 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-28 22:41:18,076 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-28 22:41:18,840 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-28 22:42:14,641 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\urls.py changed, reloading.
+INFO 2022-12-28 22:42:15,395 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-28 22:49:39,278 basehttp 161 "GET /image_codes/d98029ff-0042-4c47-a7bb-a5c767b128ff/ HTTP/1.1" 200 3168
+INFO 2022-12-28 22:49:46,886 basehttp 161 "GET /usernames/liuhaobin/count/ HTTP/1.1" 200 39
+INFO 2022-12-28 22:50:15,310 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-28 22:50:40,932 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-28 22:50:43,069 basehttp 161 "GET /image_codes/394a28f3-06e7-4bfd-9364-737a82faa1ad/ HTTP/1.1" 200 3162
+INFO 2022-12-28 22:50:54,830 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+ERROR 2022-12-28 22:50:54,869 log 224 Internal Server Error: /sms_codes/15360606636/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py", line 25, in get
+    image_code = request.Get.get('image_code')
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+ERROR 2022-12-28 22:50:54,872 basehttp 161 "GET /sms_codes/15360606636/?image_code=IPQS&image_code_id=394a28f3-06e7-4bfd-9364-737a82faa1ad HTTP/1.1" 500 91979
+INFO 2022-12-28 22:53:22,209 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\verifications\views.py changed, reloading.
+INFO 2022-12-28 22:53:22,901 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-28 22:53:29,400 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-28 22:53:29,404 basehttp 161 "GET /sms_codes/15360606636/?image_code=IPQS&image_code_id=394a28f3-06e7-4bfd-9364-737a82faa1ad HTTP/1.1" 200 75
+INFO 2022-12-28 23:04:08,918 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-28 23:04:57,221 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-28 23:04:57,225 basehttp 161 "GET /sms_codes/15360606636/?image_code=IPQS&image_code_id=394a28f3-06e7-4bfd-9364-737a82faa1ad HTTP/1.1" 200 75
+INFO 2022-12-28 23:59:03,100 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 00:01:03,465 basehttp 161 "GET /image_codes/2ffea080-bb67-4ea0-b05d-5c5d1901222c/ HTTP/1.1" 200 2973
+INFO 2022-12-29 00:01:09,195 basehttp 161 "GET /usernames/allice/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 00:01:25,237 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 00:01:32,150 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 00:01:32,315 basehttp 161 "GET /sms_codes/15360606636/?image_code=5vsh&image_code_id=2ffea080-bb67-4ea0-b05d-5c5d1901222c HTTP/1.1" 200 27
+INFO 2022-12-29 02:34:55,291 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-29 02:34:56,082 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 02:35:28,013 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-29 02:35:28,716 autoreload 637 Watching for file changes with StatReloader

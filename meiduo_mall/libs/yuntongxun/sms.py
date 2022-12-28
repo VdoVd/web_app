@@ -13,7 +13,7 @@ _accountToken = 'd1683293f0e1446ebb4b2569e8b7adb2'
 _appId = '2c94811c853e09e001854e687ed10260'
 
 # 说明：请求地址，生产环境配置成app.cloopen.com
-_serverIP = 'sandboxapp.cloopen.com'
+_serverIP = 'app.cloopen.com'
 
 # 说明：请求端口 ，生产环境为8883
 _serverPort = "8883"
@@ -73,4 +73,4 @@ class CCP(object):
 if __name__ == '__main__':
     ccp = CCP()
     # 注意： 测试的短信模板编号为1
-    ccp.send_template_sms('15360606636', ['1234', 5], 1)
+    ccp.send_template_sms('15360606636', ['666999', 3], 1)
