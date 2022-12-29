@@ -1091,3 +1091,169 @@ INFO 2022-12-29 02:34:55,291 autoreload 251 D:\project\python\美多商城\web_app\m
 INFO 2022-12-29 02:34:56,082 autoreload 637 Watching for file changes with StatReloader
 INFO 2022-12-29 02:35:28,013 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
 INFO 2022-12-29 02:35:28,716 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 17:14:52,528 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 17:15:08,221 basehttp 161 "GET /image_codes/6ff89fbf-b5ef-413d-804e-daa0fa714149/ HTTP/1.1" 200 3398
+INFO 2022-12-29 17:15:28,335 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:15:46,751 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:15:56,588 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:15:56,747 basehttp 161 "GET /sms_codes/15360606636/?image_code=6LUQ&image_code_id=6ff89fbf-b5ef-413d-804e-daa0fa714149 HTTP/1.1" 200 27
+INFO 2022-12-29 17:17:14,809 basehttp 161 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2022-12-29 17:17:14,810 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:17:14,815 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+ERROR 2022-12-29 17:17:14,977 log 224 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 57, in post
+    login(request.user)
+TypeError: login() missing 1 required positional argument: 'user'
+ERROR 2022-12-29 17:17:14,980 basehttp 161 "POST /register/ HTTP/1.1" 500 92625
+INFO 2022-12-29 17:17:31,356 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:17:31,356 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+ERROR 2022-12-29 17:17:31,511 log 224 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'alice' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 52, in post
+    User.objects.create_user(username=username,password=password,mobile=mobile)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 776, in save_base
+    updated = self._save_table(
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 919, in _do_insert
+    return manager._insert(
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'alice' for key 'username'")
+ERROR 2022-12-29 17:17:31,524 basehttp 161 "POST /register/ HTTP/1.1" 500 219197
+INFO 2022-12-29 17:18:15,994 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+WARNING 2022-12-29 17:18:16,002 log 224 Not Found: /login/
+WARNING 2022-12-29 17:18:16,003 basehttp 161 "POST /login/ HTTP/1.1" 404 3067
+WARNING 2022-12-29 17:18:31,059 log 224 Not Found: /login/
+WARNING 2022-12-29 17:18:31,060 basehttp 161 "POST /login/ HTTP/1.1" 404 3067
+INFO 2022-12-29 17:20:56,604 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\urls.py changed, reloading.
+INFO 2022-12-29 17:20:57,302 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 17:21:08,403 basehttp 161 "POST /login/ HTTP/1.1" 200 75
+INFO 2022-12-29 17:21:19,130 basehttp 161 "POST /login/ HTTP/1.1" 200 75
+INFO 2022-12-29 17:22:29,619 basehttp 161 "GET /image_codes/5c362d21-3953-4fb9-872d-911c2ac8b782/ HTTP/1.1" 200 3195
+INFO 2022-12-29 17:22:34,991 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:22:52,810 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:23:02,452 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:23:02,571 basehttp 161 "GET /sms_codes/15360606636/?image_code=s6ek&image_code_id=5c362d21-3953-4fb9-872d-911c2ac8b782 HTTP/1.1" 200 27
+INFO 2022-12-29 17:23:33,622 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:23:33,627 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+ERROR 2022-12-29 17:23:33,720 log 224 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 57, in post
+    login(request.user)
+TypeError: login() missing 1 required positional argument: 'user'
+ERROR 2022-12-29 17:23:33,723 basehttp 161 "POST /register/ HTTP/1.1" 500 92631
+INFO 2022-12-29 17:39:51,063 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-29 17:39:51,776 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 17:40:10,140 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2022-12-29 17:40:10,142 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+ERROR 2022-12-29 17:40:10,235 log 224 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 57, in post
+    login(request.user)
+TypeError: login() missing 1 required positional argument: 'user'
+ERROR 2022-12-29 17:40:10,238 basehttp 161 "POST /register/ HTTP/1.1" 500 92561
+INFO 2022-12-29 17:40:49,712 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-29 17:40:50,365 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 17:43:52,510 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 17:44:22,231 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 17:45:05,242 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 20:22:14,022 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-29 20:22:14,919 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 20:33:38,884 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\utils\models.py changed, reloading.
+INFO 2022-12-29 20:33:39,582 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 20:41:05,028 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-29 20:41:05,670 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 20:41:15,375 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 20:42:38,528 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-29 20:42:39,210 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 20:43:19,499 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-29 20:43:20,230 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 21:06:54,999 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2022-12-29 21:06:55,775 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 21:07:36,116 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2022-12-29 21:07:36,868 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-29 21:08:10,710 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2022-12-29 21:08:10,802 basehttp 161 "POST /login/ HTTP/1.1" 200 27
+WARNING 2022-12-29 21:08:11,155 log 224 Not Found: /carts/simple/
+WARNING 2022-12-29 21:08:11,156 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3240
