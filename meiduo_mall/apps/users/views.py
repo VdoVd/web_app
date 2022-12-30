@@ -120,3 +120,34 @@ class LoginView(View):
         # response = merge_cookie_to_redis(request, response)
 
         return response
+
+from django.contrib.auth import logout
+
+class LogoutView(View):
+
+    def delete(self,request):
+
+        logout(request)
+
+        response = JsonResponse({"code":0,"errmsg":"ok"})
+
+        response.delete_cookie('username')
+
+        return response
+
+from utils.views import LoginRequiredJSONMixin
+class CenterView(LoginRequiredJSONMixin,View):
+
+    def get(self,request):
+        # request.user 就是 已经登录的用户信息
+        # request.user 是来源于 中间件
+        # 系统会进行判断 如果我们确实是登录用户，则可以获取到 登录用户对应的 模型实例数据
+        # 如果我们确实不是登录用户，则request.user = AnonymousUser()  匿名用户
+        info_data = {
+            'username':request.user.username,
+            'email':request.user.email,
+            'mobile':request.user.mobile,
+            'email_active':request.user.email_active,
+        }
+
+        return JsonResponse({'code':0,'errmsg':'ok','info_data':info_data})
