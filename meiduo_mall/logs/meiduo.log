@@ -1286,3 +1286,38 @@ INFO 2022-12-30 15:13:59,769 autoreload 251 D:\project\python\美多商城\web_app\m
 INFO 2022-12-30 15:14:00,586 autoreload 637 Watching for file changes with StatReloader
 INFO 2022-12-30 15:30:58,696 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
 INFO 2022-12-30 15:30:59,537 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 18:15:34,231 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 18:16:15,523 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 19:02:44,817 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\urls.py changed, reloading.
+INFO 2022-12-31 19:02:45,580 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 19:02:59,062 basehttp 161 "GET /image_codes/7a70369c-2ded-45c9-9868-ae2f65b46220/ HTTP/1.1" 200 3313
+ERROR 2022-12-31 19:03:12,554 log 224 Internal Server Error: /qq/authorization/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py", line 12, in get
+    qq = OAuthQQ(client_id = settings.QQ_CLIENT_ID,
+TypeError: __init__() got an unexpected keyword argument 'redirect_url'
+ERROR 2022-12-31 19:03:12,557 basehttp 161 "GET /qq/authorization/?next=/ HTTP/1.1" 500 91420
+INFO 2022-12-31 19:05:52,892 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
+INFO 2022-12-31 19:05:53,714 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 19:05:58,066 basehttp 161 "GET /qq/authorization/?next=/ HTTP/1.1" 200 205
+WARNING 2022-12-31 19:14:28,927 log 224 Not Found: /oauth_callback/
+WARNING 2022-12-31 19:14:28,928 basehttp 161 "GET /oauth_callback/?code=FE5D26470E1CC77E5161824F88CB01DA HTTP/1.1" 404 3756
+INFO 2022-12-31 19:57:08,664 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
+INFO 2022-12-31 19:57:09,559 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 19:59:55,327 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
+INFO 2022-12-31 19:59:56,125 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 20:01:00,094 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
+INFO 2022-12-31 20:01:00,878 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 20:01:33,058 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
+INFO 2022-12-31 20:01:33,843 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 20:17:34,628 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
+INFO 2022-12-31 20:17:35,316 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-12-31 20:29:36,775 autoreload 637 Watching for file changes with StatReloader
