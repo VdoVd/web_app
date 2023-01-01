@@ -1321,3 +1321,54 @@ INFO 2022-12-31 20:01:33,843 autoreload 637 Watching for file changes with StatR
 INFO 2022-12-31 20:17:34,628 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
 INFO 2022-12-31 20:17:35,316 autoreload 637 Watching for file changes with StatReloader
 INFO 2022-12-31 20:29:36,775 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 21:07:14,105 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 21:08:06,506 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
+INFO 2023-01-01 21:08:07,181 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 21:09:24,896 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
+INFO 2023-01-01 21:09:25,553 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 21:14:19,205 autoreload 251 C:\Users\alice\AppData\Local\Programs\Python\Python38\Lib\site-packages\itsdangerous\serializer.py changed, reloading.
+INFO 2023-01-01 21:14:19,850 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 21:14:33,676 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 21:14:55,156 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 21:15:18,124 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 21:29:34,906 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 21:57:39,594 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\views.py changed, reloading.
+INFO 2023-01-01 21:57:40,401 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 22:02:28,014 autoreload 251 C:\Users\alice\AppData\Local\Programs\Python\Python38\Lib\site-packages\itsdangerous\_json.py changed, reloading.
+INFO 2023-01-01 22:02:28,650 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 22:08:20,820 basehttp 161 "GET /image_codes/15398780-b137-408b-abd1-8af2ecba40f4/ HTTP/1.1" 200 3276
+INFO 2023-01-01 22:08:40,551 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2023-01-01 22:08:40,949 basehttp 161 "POST /login/ HTTP/1.1" 200 27
+WARNING 2023-01-01 22:08:41,311 log 224 Not Found: /carts/simple/
+WARNING 2023-01-01 22:08:41,312 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3712
+WARNING 2023-01-01 22:08:45,070 log 224 Not Found: /info/
+WARNING 2023-01-01 22:08:45,071 log 224 Not Found: /browse_histories/
+WARNING 2023-01-01 22:08:45,071 basehttp 161 "GET /info/ HTTP/1.1" 404 3688
+WARNING 2023-01-01 22:08:45,072 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 3724
+INFO 2023-01-01 22:08:51,457 basehttp 161 "GET /qq/authorization/?next=/ HTTP/1.1" 200 205
+WARNING 2023-01-01 22:09:06,102 log 224 Not Found: /oauth_callback/
+WARNING 2023-01-01 22:09:06,103 basehttp 161 "GET /oauth_callback/?code=1D933B499174808CC7355440130915C5 HTTP/1.1" 404 3756
+INFO 2023-01-01 22:10:34,120 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\oauth\urls.py changed, reloading.
+INFO 2023-01-01 22:10:34,843 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-01 22:10:41,562 basehttp 161 "GET /oauth_callback/?code=1D933B499174808CC7355440130915C5 HTTP/1.1" 200 247
+INFO 2023-01-01 22:10:41,601 basehttp 161 "GET /image_codes/c72db894-0672-4f02-b64f-46a6bcdb9e20/ HTTP/1.1" 200 3380
+INFO 2023-01-01 22:10:55,529 basehttp 161 "GET /qq/authorization/?next=/ HTTP/1.1" 200 205
+INFO 2023-01-01 22:11:02,246 basehttp 161 "GET /oauth_callback/?code=8562AE40D631FF9BEC36B8A5A12D9246 HTTP/1.1" 200 247
+INFO 2023-01-01 22:11:02,258 basehttp 161 "GET /image_codes/2927a0aa-2c4d-47de-8b09-2fae856d1267/ HTTP/1.1" 200 2795
+INFO 2023-01-01 22:11:29,194 basehttp 161 "GET /sms_codes/15360606636/?image_code=8DVO&image_code_id=2927a0aa-2c4d-47de-8b09-2fae856d1267 HTTP/1.1" 200 27
+INFO 2023-01-01 22:11:42,144 basehttp 161 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2023-01-01 22:11:42,262 basehttp 161 "POST /oauth_callback/ HTTP/1.1" 200 27
+WARNING 2023-01-01 22:11:42,535 log 224 Not Found: /carts/simple/
+WARNING 2023-01-01 22:11:42,536 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3874
+WARNING 2023-01-01 22:11:47,002 log 224 Not Found: /info/
+WARNING 2023-01-01 22:11:47,003 log 224 Not Found: /browse_histories/
+WARNING 2023-01-01 22:11:47,003 basehttp 161 "GET /info/ HTTP/1.1" 404 3850
+WARNING 2023-01-01 22:11:47,003 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 3886
+INFO 2023-01-01 22:11:51,975 basehttp 161 "GET /qq/authorization/?next=/ HTTP/1.1" 200 205
+INFO 2023-01-01 22:11:58,481 basehttp 161 "GET /oauth_callback/?code=F80DA3C45D58AD29D9C25C3BE4711265 HTTP/1.1" 200 27
+WARNING 2023-01-01 22:11:58,627 log 224 Not Found: /carts/simple/
+WARNING 2023-01-01 22:11:58,627 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3874
+WARNING 2023-01-01 22:12:00,950 log 224 Not Found: /browse_histories/
+WARNING 2023-01-01 22:12:00,951 log 224 Not Found: /info/
+WARNING 2023-01-01 22:12:00,952 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 3886
+WARNING 2023-01-01 22:12:00,952 basehttp 161 "GET /info/ HTTP/1.1" 404 3850
