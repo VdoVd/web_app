@@ -1403,3 +1403,31 @@ WARNING 2023-01-04 00:55:20,111 log 224 Not Found: /browse_histories/
 WARNING 2023-01-04 00:55:20,112 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 3886
 INFO 2023-01-04 00:56:52,620 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\urls.py changed, reloading.
 INFO 2023-01-04 00:56:53,394 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 00:57:14,281 basehttp 161 "POST /login/ HTTP/1.1" 200 27
+WARNING 2023-01-04 00:57:14,458 log 224 Not Found: /carts/simple/
+WARNING 2023-01-04 00:57:14,458 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3872
+WARNING 2023-01-04 00:57:18,523 log 224 Not Found: /browse_histories/
+WARNING 2023-01-04 00:57:18,524 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 3884
+INFO 2023-01-04 00:57:18,526 basehttp 161 "GET /info/ HTTP/1.1" 200 124
+INFO 2023-01-04 01:01:29,467 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\urls.py changed, reloading.
+INFO 2023-01-04 01:01:30,367 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 01:11:35,527 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\urls.py changed, reloading.
+INFO 2023-01-04 01:11:36,366 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 01:11:45,424 basehttp 161 "OPTIONS /emails/ HTTP/1.1" 200 0
+ERROR 2023-01-04 01:11:45,491 log 224 Internal Server Error: /emails/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 187, in put
+    from apps.users.utils import generic_email_verify_token
+ModuleNotFoundError: No module named 'apps.users.utils'
+ERROR 2023-01-04 01:11:45,494 basehttp 161 "PUT /emails/ HTTP/1.1" 500 96613
+INFO 2023-01-04 01:13:34,760 autoreload 637 Watching for file changes with StatReloader
