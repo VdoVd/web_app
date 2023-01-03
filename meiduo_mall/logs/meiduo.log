@@ -1372,3 +1372,34 @@ WARNING 2023-01-01 22:12:00,950 log 224 Not Found: /browse_histories/
 WARNING 2023-01-01 22:12:00,951 log 224 Not Found: /info/
 WARNING 2023-01-01 22:12:00,952 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 3886
 WARNING 2023-01-01 22:12:00,952 basehttp 161 "GET /info/ HTTP/1.1" 404 3850
+INFO 2023-01-04 00:47:17,993 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 00:50:37,499 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2023-01-04 00:50:37,594 basehttp 161 "POST /login/ HTTP/1.1" 200 69
+INFO 2023-01-04 00:51:13,038 basehttp 161 "POST /login/ HTTP/1.1" 200 27
+WARNING 2023-01-04 00:51:13,489 log 224 Not Found: /carts/simple/
+WARNING 2023-01-04 00:51:13,490 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3874
+WARNING 2023-01-04 00:51:18,502 log 224 Not Found: /info/
+WARNING 2023-01-04 00:51:18,503 log 224 Not Found: /browse_histories/
+WARNING 2023-01-04 00:51:18,503 basehttp 161 "GET /info/ HTTP/1.1" 404 3850
+WARNING 2023-01-04 00:51:18,503 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 3886
+INFO 2023-01-04 00:51:59,983 basehttp 161 "POST /login/ HTTP/1.1" 200 69
+INFO 2023-01-04 00:52:08,966 basehttp 161 "POST /login/ HTTP/1.1" 200 27
+WARNING 2023-01-04 00:52:09,138 log 224 Not Found: /carts/simple/
+WARNING 2023-01-04 00:52:09,138 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3874
+WARNING 2023-01-04 00:53:33,300 log 224 Not Found: /info/
+WARNING 2023-01-04 00:53:33,301 log 224 Not Found: /browse_histories/
+WARNING 2023-01-04 00:53:33,302 basehttp 161 "GET /info/ HTTP/1.1" 404 3850
+WARNING 2023-01-04 00:53:33,302 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 3886
+INFO 2023-01-04 00:54:15,862 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 00:54:36,067 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2023-01-04 00:54:39,548 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2023-01-04 00:54:46,670 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2023-01-04 00:55:09,198 basehttp 161 "POST /login/ HTTP/1.1" 200 27
+WARNING 2023-01-04 00:55:09,438 log 224 Not Found: /carts/simple/
+WARNING 2023-01-04 00:55:09,438 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 3874
+WARNING 2023-01-04 00:55:20,106 log 224 Not Found: /info/
+WARNING 2023-01-04 00:55:20,108 basehttp 161 "GET /info/ HTTP/1.1" 404 3850
+WARNING 2023-01-04 00:55:20,111 log 224 Not Found: /browse_histories/
+WARNING 2023-01-04 00:55:20,112 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 3886
+INFO 2023-01-04 00:56:52,620 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\urls.py changed, reloading.
+INFO 2023-01-04 00:56:53,394 autoreload 637 Watching for file changes with StatReloader
