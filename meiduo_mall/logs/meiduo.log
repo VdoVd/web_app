@@ -1431,3 +1431,512 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'apps.users.utils'
 ERROR 2023-01-04 01:11:45,494 basehttp 161 "PUT /emails/ HTTP/1.1" 500 96613
 INFO 2023-01-04 01:13:34,760 autoreload 637 Watching for file changes with StatReloader
+WARNING 2023-01-04 01:13:49,785 log 224 Not Found: /browse_histories/
+WARNING 2023-01-04 01:13:49,786 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 4038
+INFO 2023-01-04 01:13:49,795 basehttp 161 "GET /info/ HTTP/1.1" 200 137
+WARNING 2023-01-04 01:13:52,384 log 224 Not Found: /carts/simple/
+WARNING 2023-01-04 01:13:52,385 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 4026
+INFO 2023-01-04 01:14:17,024 basehttp 161 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2023-01-04 01:14:17,568 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 09:33:49,698 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2023-01-04 09:33:50,558 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 09:34:59,500 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2023-01-04 09:35:00,313 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 09:45:22,669 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 09:45:23,504 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 16:11:51,368 basehttp 161 "GET /image_codes/54dd01d9-06c0-45a5-8a15-6882e34f9234/ HTTP/1.1" 200 3242
+INFO 2023-01-04 16:11:57,201 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 16:12:12,243 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 16:12:18,914 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 16:12:19,171 basehttp 161 "GET /sms_codes/15360606636/?image_code=pddy&image_code_id=54dd01d9-06c0-45a5-8a15-6882e34f9234 HTTP/1.1" 200 27
+INFO 2023-01-04 16:12:30,645 basehttp 161 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2023-01-04 16:12:30,645 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 16:12:30,650 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+ERROR 2023-01-04 16:12:30,817 log 224 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 57, in post
+    login(request.user)
+TypeError: login() missing 1 required positional argument: 'user'
+ERROR 2023-01-04 16:12:30,820 basehttp 161 "POST /register/ HTTP/1.1" 500 92572
+INFO 2023-01-04 16:12:33,952 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 16:12:33,952 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+ERROR 2023-01-04 16:12:34,114 log 224 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'alice' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 52, in post
+    User.objects.create_user(username=username,password=password,mobile=mobile)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\models.py", line 152, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\models.py", line 146, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 739, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 776, in save_base
+    updated = self._save_table(
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\base.py", line 919, in _do_insert
+    return manager._insert(
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\sql\compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\backends\mysql\base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.IntegrityError: (1062, "Duplicate entry 'alice' for key 'username'")
+ERROR 2023-01-04 16:12:34,120 basehttp 161 "POST /register/ HTTP/1.1" 500 219151
+INFO 2023-01-04 16:13:40,060 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2023-01-04 16:13:40,137 basehttp 161 "POST /login/ HTTP/1.1" 200 27
+WARNING 2023-01-04 16:13:40,543 log 224 Not Found: /carts/simple/
+WARNING 2023-01-04 16:13:40,544 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 4026
+WARNING 2023-01-04 16:13:50,136 log 224 Not Found: /browse_histories/
+INFO 2023-01-04 16:13:50,138 basehttp 161 "GET /info/ HTTP/1.1" 200 124
+WARNING 2023-01-04 16:13:50,138 basehttp 161 "GET /browse_histories/ HTTP/1.1" 404 4038
+INFO 2023-01-04 16:14:07,441 basehttp 161 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2023-01-04 16:14:07,458 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 16:18:11,576 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 16:18:12,449 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 16:19:40,329 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 16:19:41,055 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 16:19:52,832 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 16:19:52,871 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 476, in get
+    redis_cli = get_redis_connection('history')
+NameError: name 'get_redis_connection' is not defined
+ERROR 2023-01-04 16:19:52,873 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 94974
+INFO 2023-01-04 16:19:55,340 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 16:31:05,981 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 16:31:06,002 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 476, in get
+    redis_cli = get_redis_connection('history')
+NameError: name 'get_redis_connection' is not defined
+ERROR 2023-01-04 16:31:06,004 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 95044
+INFO 2023-01-04 16:31:44,067 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 16:51:23,629 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 16:51:24,507 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 16:51:32,225 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 16:51:32,245 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 476, in get
+    redis_cli = get_redis_connection('history')
+NameError: name 'get_redis_connection' is not defined
+ERROR 2023-01-04 16:51:32,248 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 94974
+INFO 2023-01-04 16:51:38,518 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 17:01:45,639 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 17:01:46,413 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 17:01:57,843 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 17:01:58,590 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 17:49:06,446 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 17:49:06,490 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 58, in __getitem__
+    return getattr(self._connections, alias)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\asgiref\local.py", line 105, in __getattr__
+    raise AttributeError(f"{self!r} object has no attribute {key!r}")
+AttributeError: <asgiref.local.Local object at 0x000001D11C6A9580> object has no attribute 'history'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 476, in get
+    redis_cli = get_redis_connection('history')
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django_redis\__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 61, in __getitem__
+    raise self.exception_class(f"The connection '{alias}' doesn't exist.")
+django.core.cache.backends.base.InvalidCacheBackendError: The connection 'history' doesn't exist.
+ERROR 2023-01-04 17:49:06,494 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 111770
+INFO 2023-01-04 17:49:12,032 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 17:50:06,440 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 17:50:14,616 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 17:50:14,645 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 58, in __getitem__
+    return getattr(self._connections, alias)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\asgiref\local.py", line 105, in __getattr__
+    raise AttributeError(f"{self!r} object has no attribute {key!r}")
+AttributeError: <asgiref.local.Local object at 0x00000201CA109580> object has no attribute 'history'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 476, in get
+    redis_cli = get_redis_connection('history')
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django_redis\__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 61, in __getitem__
+    raise self.exception_class(f"The connection '{alias}' doesn't exist.")
+django.core.cache.backends.base.InvalidCacheBackendError: The connection 'history' doesn't exist.
+ERROR 2023-01-04 17:50:14,648 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 111770
+INFO 2023-01-04 17:50:24,052 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 18:02:08,736 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 18:02:09,563 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 18:02:16,471 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 18:02:16,568 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 58, in __getitem__
+    return getattr(self._connections, alias)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\asgiref\local.py", line 105, in __getattr__
+    raise AttributeError(f"{self!r} object has no attribute {key!r}")
+AttributeError: <asgiref.local.Local object at 0x000001C7B9C09580> object has no attribute 'history'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 477, in get
+    redis_cli = get_redis_connection('history')
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django_redis\__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 61, in __getitem__
+    raise self.exception_class(f"The connection '{alias}' doesn't exist.")
+django.core.cache.backends.base.InvalidCacheBackendError: The connection 'history' doesn't exist.
+ERROR 2023-01-04 18:02:16,571 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 111770
+INFO 2023-01-04 18:02:18,104 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 18:03:01,117 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 18:03:01,890 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 18:03:07,423 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 18:03:07,455 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 58, in __getitem__
+    return getattr(self._connections, alias)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\asgiref\local.py", line 105, in __getattr__
+    raise AttributeError(f"{self!r} object has no attribute {key!r}")
+AttributeError: <asgiref.local.Local object at 0x0000015A43F59580> object has no attribute 'history'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 477, in get
+    redis_cli = get_redis_connection('history')
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django_redis\__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 61, in __getitem__
+    raise self.exception_class(f"The connection '{alias}' doesn't exist.")
+django.core.cache.backends.base.InvalidCacheBackendError: The connection 'history' doesn't exist.
+ERROR 2023-01-04 18:03:07,458 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 111770
+INFO 2023-01-04 18:03:10,078 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 18:04:59,955 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\celery_tasks\email\tasks.py changed, reloading.
+INFO 2023-01-04 18:05:00,701 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 18:05:04,990 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 18:05:05,017 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 58, in __getitem__
+    return getattr(self._connections, alias)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\asgiref\local.py", line 105, in __getattr__
+    raise AttributeError(f"{self!r} object has no attribute {key!r}")
+AttributeError: <asgiref.local.Local object at 0x000001D9380D9580> object has no attribute 'history'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 477, in get
+    redis_cli = get_redis_connection('history')
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django_redis\__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 61, in __getitem__
+    raise self.exception_class(f"The connection '{alias}' doesn't exist.")
+django.core.cache.backends.base.InvalidCacheBackendError: The connection 'history' doesn't exist.
+ERROR 2023-01-04 18:05:05,021 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 111770
+INFO 2023-01-04 18:05:07,037 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 18:05:41,823 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\celery_tasks\email\tasks.py changed, reloading.
+INFO 2023-01-04 18:05:42,527 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 18:05:47,958 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 18:05:47,995 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 58, in __getitem__
+    return getattr(self._connections, alias)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\asgiref\local.py", line 105, in __getattr__
+    raise AttributeError(f"{self!r} object has no attribute {key!r}")
+AttributeError: <asgiref.local.Local object at 0x0000026A3CB89580> object has no attribute 'history'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 477, in get
+    redis_cli = get_redis_connection('history')
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django_redis\__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 61, in __getitem__
+    raise self.exception_class(f"The connection '{alias}' doesn't exist.")
+django.core.cache.backends.base.InvalidCacheBackendError: The connection 'history' doesn't exist.
+ERROR 2023-01-04 18:05:47,998 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 111770
+INFO 2023-01-04 18:05:49,534 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 18:08:23,318 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\celery_tasks\email\tasks.py changed, reloading.
+INFO 2023-01-04 18:08:24,237 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 18:37:54,205 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 18:37:54,237 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 58, in __getitem__
+    return getattr(self._connections, alias)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\asgiref\local.py", line 105, in __getattr__
+    raise AttributeError(f"{self!r} object has no attribute {key!r}")
+AttributeError: <asgiref.local.Local object at 0x000001C58F3C9580> object has no attribute 'history'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 477, in get
+    redis_cli = get_redis_connection('history')
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django_redis\__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 61, in __getitem__
+    raise self.exception_class(f"The connection '{alias}' doesn't exist.")
+django.core.cache.backends.base.InvalidCacheBackendError: The connection 'history' doesn't exist.
+ERROR 2023-01-04 18:37:54,240 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 111770
+INFO 2023-01-04 18:37:55,940 basehttp 161 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2023-01-04 18:37:56,073 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 18:42:41,477 autoreload 251 C:\Users\alice\AppData\Local\Programs\Python\Python38\Lib\site-packages\amqp\abstract_channel.py changed, reloading.
+INFO 2023-01-04 18:42:42,309 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 18:45:08,961 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+ERROR 2023-01-04 18:45:08,990 log 224 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 58, in __getitem__
+    return getattr(self._connections, alias)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\asgiref\local.py", line 105, in __getattr__
+    raise AttributeError(f"{self!r} object has no attribute {key!r}")
+AttributeError: <asgiref.local.Local object at 0x0000020BCC459580> object has no attribute 'history'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 477, in get
+    redis_cli = get_redis_connection('history')
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django_redis\__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\connection.py", line 61, in __getitem__
+    raise self.exception_class(f"The connection '{alias}' doesn't exist.")
+django.core.cache.backends.base.InvalidCacheBackendError: The connection 'history' doesn't exist.
+ERROR 2023-01-04 18:45:08,992 basehttp 161 "GET /browse_histories/ HTTP/1.1" 500 111770
+INFO 2023-01-04 18:45:10,789 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 18:48:21,746 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2023-01-04 18:48:22,478 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 18:48:56,270 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+INFO 2023-01-04 18:48:56,272 basehttp 161 "GET /browse_histories/ HTTP/1.1" 200 39
+INFO 2023-01-04 18:48:59,833 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 19:27:06,356 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 19:27:07,162 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 19:30:15,927 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 19:30:16,691 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 19:30:52,354 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 19:30:53,155 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 19:31:01,547 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+INFO 2023-01-04 19:31:01,548 basehttp 161 "GET /browse_histories/ HTTP/1.1" 200 39
+INFO 2023-01-04 19:31:03,390 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 19:31:21,766 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\celery_tasks\p.py changed, reloading.
+INFO 2023-01-04 19:31:22,568 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 19:31:31,210 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+INFO 2023-01-04 19:31:31,211 basehttp 161 "GET /browse_histories/ HTTP/1.1" 200 39
+INFO 2023-01-04 19:31:33,330 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 19:38:22,951 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 19:38:23,911 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 19:53:00,151 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+INFO 2023-01-04 19:53:00,152 basehttp 161 "GET /browse_histories/ HTTP/1.1" 200 39
+INFO 2023-01-04 19:53:01,954 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-04 19:53:31,666 basehttp 161 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTY3MjgzMzE4MSwiZXhwIjoxNjcyOTE5NTgxfQ.eyJ1c2VyX2lkIjoxNX0.9k5LfmGWYpeJ278xLNFqCP87ttANay8vWDhTmatKyZJn5BxmZfJKqxti8ZrUJPdlHIv3VJhyrIJpkqStw4ERqA HTTP/1.1" 200 0
+INFO 2023-01-04 19:53:31,672 basehttp 161 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTY3MjgzMzE4MSwiZXhwIjoxNjcyOTE5NTgxfQ.eyJ1c2VyX2lkIjoxNX0.9k5LfmGWYpeJ278xLNFqCP87ttANay8vWDhTmatKyZJn5BxmZfJKqxti8ZrUJPdlHIv3VJhyrIJpkqStw4ERqA HTTP/1.1" 200 27
+INFO 2023-01-04 19:54:49,612 basehttp 161 "GET /image_codes/00c05941-b313-4c5a-a69e-839e6704ed33/ HTTP/1.1" 200 3067
+INFO 2023-01-04 19:55:24,119 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 19:55:42,632 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 19:55:50,334 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 19:55:50,354 basehttp 161 "GET /sms_codes/15360606636/?image_code=ZBIW&image_code_id=00c05941-b313-4c5a-a69e-839e6704ed33 HTTP/1.1" 200 27
+INFO 2023-01-04 19:57:04,156 basehttp 161 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2023-01-04 19:57:04,157 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 19:57:04,158 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+ERROR 2023-01-04 19:57:04,254 log 224 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 57, in post
+    login(request.user)
+TypeError: login() missing 1 required positional argument: 'user'
+ERROR 2023-01-04 19:57:04,256 basehttp 161 "POST /register/ HTTP/1.1" 500 93106
+INFO 2023-01-04 19:58:54,814 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 19:58:55,657 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 19:59:12,342 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 19:59:12,342 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+ERROR 2023-01-04 19:59:12,440 log 224 Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\alice\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py", line 57, in post
+    login(request,user)
+NameError: name 'user' is not defined
+ERROR 2023-01-04 19:59:12,442 basehttp 161 "POST /register/ HTTP/1.1" 500 92924
+INFO 2023-01-04 20:00:45,822 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-04 20:00:46,615 autoreload 637 Watching for file changes with StatReloader
