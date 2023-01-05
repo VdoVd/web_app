@@ -1940,3 +1940,35 @@ NameError: name 'user' is not defined
 ERROR 2023-01-04 19:59:12,442 basehttp 161 "POST /register/ HTTP/1.1" 500 92924
 INFO 2023-01-04 20:00:45,822 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
 INFO 2023-01-04 20:00:46,615 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-04 20:01:02,098 basehttp 161 "GET /usernames/alice/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 20:01:02,098 basehttp 161 "GET /mobiles/15360606636/count/ HTTP/1.1" 200 39
+INFO 2023-01-04 20:01:02,171 basehttp 161 "POST /register/ HTTP/1.1" 200 27
+WARNING 2023-01-04 20:01:02,446 log 224 Not Found: /carts/simple/
+WARNING 2023-01-04 20:01:02,446 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 4357
+INFO 2023-01-04 20:01:09,547 basehttp 161 "GET /info/ HTTP/1.1" 200 124
+INFO 2023-01-04 20:01:09,549 basehttp 161 "GET /browse_histories/ HTTP/1.1" 200 39
+INFO 2023-01-04 20:01:30,168 basehttp 161 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2023-01-05 15:09:33,009 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2023-01-05 15:09:33,902 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-05 15:33:23,323 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\urls.py changed, reloading.
+INFO 2023-01-05 15:33:24,117 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-05 15:34:17,261 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2023-01-05 15:34:17,354 basehttp 161 "POST /login/ HTTP/1.1" 200 27
+WARNING 2023-01-05 15:34:17,732 log 224 Not Found: /carts/simple/
+WARNING 2023-01-05 15:34:17,733 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 4674
+INFO 2023-01-05 15:34:21,394 basehttp 161 "GET /info/ HTTP/1.1" 200 143
+INFO 2023-01-05 15:34:21,397 basehttp 161 "GET /browse_histories/ HTTP/1.1" 200 39
+WARNING 2023-01-05 15:34:37,966 log 224 Not Found: /addresses/
+WARNING 2023-01-05 15:34:37,968 basehttp 161 "GET /addresses/ HTTP/1.1" 404 4665
+INFO 2023-01-05 15:34:37,989 basehttp 161 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2023-01-05 15:58:06,979 basehttp 161 "GET /areas/130000/ HTTP/1.1" 200 657
+INFO 2023-01-05 15:58:11,035 basehttp 161 "GET /areas/130300/ HTTP/1.1" 200 409
+INFO 2023-01-05 16:03:17,158 basehttp 161 "OPTIONS /addresses/create/ HTTP/1.1" 200 0
+WARNING 2023-01-05 16:03:17,166 log 224 Not Found: /addresses/create/
+WARNING 2023-01-05 16:03:17,166 basehttp 161 "POST /addresses/create/ HTTP/1.1" 404 4687
+WARNING 2023-01-05 16:03:18,981 log 224 Not Found: /addresses/create/
+WARNING 2023-01-05 16:03:18,981 basehttp 161 "POST /addresses/create/ HTTP/1.1" 404 4687
+INFO 2023-01-05 16:05:26,780 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\models.py changed, reloading.
+INFO 2023-01-05 16:05:27,540 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-05 16:07:25,649 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
+INFO 2023-01-05 16:07:26,528 autoreload 637 Watching for file changes with StatReloader

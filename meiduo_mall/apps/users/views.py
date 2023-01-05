@@ -293,90 +293,90 @@ class EmailVerifyView(View):
         4.返回响应
 
 # """
-# from apps.users.models import Address
-#
-#
-# class AddressCreateView(LoginRequiredJSONMixin, View):
-#
-#     def post(self, request):
-#         # 1.接收请求
-#         data = json.loads(request.body.decode())
-#         # 2.获取参数，验证参数
-#         receiver = data.get('receiver')
-#         province_id = data.get('province_id')
-#         city_id = data.get('city_id')
-#         district_id = data.get('district_id')
-#         place = data.get('place')
-#         mobile = data.get('mobile')
-#         tel = data.get('tel')
-#         email = data.get('email')
-#
-#         user = request.user
-#         # 验证参数 （省略）
-#         # 2.1 验证必传参数
-#         # 2.2 省市区的id 是否正确
-#         # 2.3 详细地址的长度
-#         # 2.4 手机号
-#         # 2.5 固定电话
-#         # 2.6 邮箱
-#
-#         # 3.数据入库
-#         address = Address.objects.create(
-#             user=user,
-#             title=receiver,
-#             receiver=receiver,
-#             province_id=province_id,
-#             city_id=city_id,
-#             district_id=district_id,
-#             place=place,
-#             mobile=mobile,
-#             tel=tel,
-#             email=email
-#         )
-#
-#         address_dict = {
-#             'id': address.id,
-#             "title": address.title,
-#             "receiver": address.receiver,
-#             "province": address.province.name,
-#             "city": address.city.name,
-#             "district": address.district.name,
-#             "place": address.place,
-#             "mobile": address.mobile,
-#             "tel": address.tel,
-#             "email": address.email
-#         }
-#
-#         # 4.返回响应
-#         return JsonResponse({'code': 0, 'errmsg': 'ok', 'address': address_dict})
-#
-#
-# class AddressView(LoginRequiredJSONMixin, View):
-#
-#     def get(self, request):
-#         # 1.查询指定数据
-#         user = request.user
-#         # addresses=user.addresses
-#
-#         addresses = Address.objects.filter(user=user, is_deleted=False)
-#         # 2.将对象数据转换为字典数据
-#         address_list = []
-#         for address in addresses:
-#             address_list.append({
-#                 "id": address.id,
-#                 "title": address.title,
-#                 "receiver": address.receiver,
-#                 "province": address.province.name,
-#                 "city": address.city.name,
-#                 "district": address.district.name,
-#                 "place": address.place,
-#                 "mobile": address.mobile,
-#                 "tel": address.tel,
-#                 "email": address.email
-#             })
-#         # 3.返回响应
-#         return JsonResponse({'code': 0, 'errmsg': 'ok', 'addresses': address_list})
-#
+from apps.users.models import Address
+
+
+class AddressCreateView(LoginRequiredJSONMixin, View):
+
+    def post(self, request):
+        # 1.接收请求
+        data = json.loads(request.body.decode())
+        # 2.获取参数，验证参数
+        receiver = data.get('receiver')
+        province_id = data.get('province_id')
+        city_id = data.get('city_id')
+        district_id = data.get('district_id')
+        place = data.get('place')
+        mobile = data.get('mobile')
+        tel = data.get('tel')
+        email = data.get('email')
+
+        user = request.user
+        # 验证参数 （省略）
+        # 2.1 验证必传参数
+        # 2.2 省市区的id 是否正确
+        # 2.3 详细地址的长度
+        # 2.4 手机号
+        # 2.5 固定电话
+        # 2.6 邮箱
+
+        # 3.数据入库
+        address = Address.objects.create(
+            user=user,
+            title=receiver,
+            receiver=receiver,
+            province_id=province_id,
+            city_id=city_id,
+            district_id=district_id,
+            place=place,
+            mobile=mobile,
+            tel=tel,
+            email=email
+        )
+
+        address_dict = {
+            'id': address.id,
+            "title": address.title,
+            "receiver": address.receiver,
+            "province": address.province.name,
+            "city": address.city.name,
+            "district": address.district.name,
+            "place": address.place,
+            "mobile": address.mobile,
+            "tel": address.tel,
+            "email": address.email
+        }
+
+        # 4.返回响应
+        return JsonResponse({'code': 0, 'errmsg': 'ok', 'address': address_dict})
+
+
+class AddressView(LoginRequiredJSONMixin, View):
+
+    def get(self, request):
+        # 1.查询指定数据
+        user = request.user
+        # addresses=user.addresses
+
+        addresses = Address.objects.filter(user=user, is_deleted=False)
+        # 2.将对象数据转换为字典数据
+        address_list = []
+        for address in addresses:
+            address_list.append({
+                "id": address.id,
+                "title": address.title,
+                "receiver": address.receiver,
+                "province": address.province.name,
+                "city": address.city.name,
+                "district": address.district.name,
+                "place": address.place,
+                "mobile": address.mobile,
+                "tel": address.tel,
+                "email": address.email
+            })
+        # 3.返回响应
+        return JsonResponse({'code': 0, 'errmsg': 'ok', 'addresses': address_list})
+
 #
 # #################################################
 #
