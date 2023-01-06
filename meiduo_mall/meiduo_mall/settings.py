@@ -35,12 +35,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'crows browser setting',
-    'corsheaders',
     'apps.verifications',
     'apps.users',
     'apps.oauth',
-    'apps.areas'
+    'apps.areas',
+    'apps.goods',
+    'apps.contents',
+#'crows browser setting',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [

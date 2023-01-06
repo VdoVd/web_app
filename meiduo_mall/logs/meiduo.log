@@ -1972,3 +1972,19 @@ INFO 2023-01-05 16:05:26,780 autoreload 251 D:\project\python\美多商城\web_app\m
 INFO 2023-01-05 16:05:27,540 autoreload 637 Watching for file changes with StatReloader
 INFO 2023-01-05 16:07:25,649 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\apps\users\views.py changed, reloading.
 INFO 2023-01-05 16:07:26,528 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-05 16:09:42,987 basehttp 161 "POST /addresses/create/ HTTP/1.1" 200 265
+INFO 2023-01-05 16:09:43,149 basehttp 161 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2023-01-05 16:09:43,157 basehttp 161 "GET /addresses/ HTTP/1.1" 200 269
+INFO 2023-01-06 08:25:45,775 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-06 08:32:32,802 autoreload 251 D:\project\python\美多商城\web_app\meiduo_mall\meiduo_mall\settings.py changed, reloading.
+INFO 2023-01-06 08:32:33,693 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-06 12:57:57,870 autoreload 637 Watching for file changes with StatReloader
+INFO 2023-01-06 12:58:01,574 basehttp 161 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2023-01-06 12:58:01,662 basehttp 161 "POST /login/ HTTP/1.1" 200 27
+WARNING 2023-01-06 12:58:01,983 log 224 Not Found: /carts/simple/
+WARNING 2023-01-06 12:58:01,984 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 5674
+WARNING 2023-01-06 13:49:31,504 log 224 Not Found: /hot/274/
+WARNING 2023-01-06 13:49:31,506 log 224 Not Found: /carts/simple/
+WARNING 2023-01-06 13:49:31,508 basehttp 161 "GET /hot/274/ HTTP/1.1" 404 5659
+WARNING 2023-01-06 13:49:31,508 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 5674
+INFO 2023-01-06 13:49:31,510 basehttp 161 "GET /list/274/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 139
