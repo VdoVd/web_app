@@ -1988,3 +1988,4 @@ WARNING 2023-01-06 13:49:31,506 log 224 Not Found: /carts/simple/
 WARNING 2023-01-06 13:49:31,508 basehttp 161 "GET /hot/274/ HTTP/1.1" 404 5659
 WARNING 2023-01-06 13:49:31,508 basehttp 161 "GET /carts/simple/ HTTP/1.1" 404 5674
 INFO 2023-01-06 13:49:31,510 basehttp 161 "GET /list/274/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 139
+INFO 2023-01-08 18:21:54,431 autoreload 637 Watching for file changes with StatReloader
